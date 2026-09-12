@@ -21,9 +21,9 @@ Then in any Claude Code session:
 
 ## What it does
 
-The skill acts as a writing collaborator for academic ML papers. It covers abstracts, introductions, related work, theory sections, experiments, revisions, and rebuttals.
+The skill acts as a writing collaborator for academic ML papers. It covers abstracts, introductions, related work, methods/algorithms, theory (including proof writing), experiments, conclusions, revisions, and rebuttals.
 
-The style profile was extracted by analyzing published papers across venues including NeurIPS, ICLR, AISTATS, and CDC. It captures patterns in voice, sentence structure, contribution formatting, citation style, mathematical notation, paragraph transitions, and rhetorical devices. It also explicitly blocks common LLM writing patterns ("delve", em-dash overuse, formulaic enumeration, etc.).
+The style profile was extracted by analyzing published papers across venues including NeurIPS, ICLR, AISTATS, and CDC. It covers voice, sentence structure, contribution formatting, citation style, mathematical notation, proof writing, paragraph transitions, figure/caption conventions, main-body vs. appendix decisions, and rhetorical devices. It also blocks common LLM writing patterns (30+ banned words/phrases, structural tells like uniform paragraph size, weasel citations, promotional tone).
 
 ## Files
 

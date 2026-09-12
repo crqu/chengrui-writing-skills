@@ -13,9 +13,11 @@ Then invoke with `/write` in any Claude Code session.
 ## Modes
 
 - **Abstract**: 150 to 200 words, funnel structure, ends with strongest result
-- **Introduction**: broad context, narrows to gap, explicit question, contributions block
+- **Introduction**: funnel structure, Figure 1 anchoring, contributions block
 - **Related work**: bold topic headers, survey then contrast pattern
-- **Theory**: formal environments, assumptions contextualized, Remark blocks
-- **Experiments**: question-driven, precise metrics, inline figure/table references
-- **Revision**: fixes style deviations while preserving arguments
-- **Rebuttal**: direct, factual, assertive
+- **Methods/algorithm**: self-contained, Algorithm environments, design choices motivated inline
+- **Theory**: formal environments, proof strategy before mechanics, lemma decomposition
+- **Experiments**: question-driven, headline comparisons in body, details in appendix
+- **Conclusion**: fresh rephrasing, limitations as future work, half column max
+- **Revision**: fixes style deviations, checks for implicit assumptions
+- **Rebuttal**: structured per-reviewer responses, quotes concerns, respects venue limits
