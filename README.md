@@ -1,15 +1,12 @@
-# Chenrui Writing Skill
+# Chengrui Writing Skill
 
-A Claude Code slash command (`/write`) that drafts and revises academic papers in Chengrui Qu's writing style.
+A Claude Code slash command (`/write`) for drafting and revising academic ML/RL papers. Encodes a specific writing style extracted from published research, so the output reads like a human researcher wrote it rather than generic LLM prose.
 
 ## Quick start
 
 ```bash
-# Clone this repo
-git clone <repo-url>
-cd "Chenrui Writing Skill"
-
-# Install the skill
+git clone https://github.com/crqu/chengrui-writing-skills.git
+cd chengrui-writing-skills
 cp write.md ~/.claude/commands/write.md
 ```
 
@@ -24,23 +21,23 @@ Then in any Claude Code session:
 
 ## What it does
 
-The skill acts as a writing collaborator calibrated to Chengrui's exact academic voice. It covers abstracts, introductions, related work, theory sections, experiments, revisions, and rebuttals.
+The skill acts as a writing collaborator for academic ML papers. It covers abstracts, introductions, related work, theory sections, experiments, revisions, and rebuttals.
 
-The style profile was extracted by analyzing 5 published papers across venues including NeurIPS, ICLR, AISTATS, and CDC. It captures patterns in voice, sentence structure, contribution formatting, citation style, mathematical notation, paragraph transitions, and rhetorical devices.
+The style profile was extracted by analyzing published papers across venues including NeurIPS, ICLR, AISTATS, and CDC. It captures patterns in voice, sentence structure, contribution formatting, citation style, mathematical notation, paragraph transitions, and rhetorical devices. It also explicitly blocks common LLM writing patterns ("delve", em-dash overuse, formulaic enumeration, etc.).
 
 ## Files
 
-- `write.md` — The skill file. Copy this to `~/.claude/commands/` to install.
+- `write.md` — The skill file. Copy to `~/.claude/commands/` to install.
 - `CLAUDE.md` — Project context for Claude Code sessions opened in this directory.
 
 ## Customization
 
 The style profile in `write.md` is meant to be a living document. As your writing evolves or you publish new papers, update the relevant sections. Key areas to customize:
 
-- **Research Context** (line ~97): update your active research areas and collaborators
-- **Anti-patterns** (line ~136): add any additional phrases or patterns to avoid
-- **Rhetorical Devices** (line ~89): add new patterns from recent papers
+- **Anti-patterns** (bottom of file): add phrases or patterns to avoid
+- **Rhetorical Devices**: add new patterns from recent papers
+- **Voice & Tone**: adjust formality level, hedging preferences
 
 ## License
 
-Personal use.
+MIT
